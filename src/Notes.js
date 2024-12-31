@@ -8,7 +8,7 @@ const Notes = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Teko classes
+            Manjeet classes
           </a>
           <button
             className="navbar-toggler"
@@ -242,7 +242,8 @@ const Notes = () => {
             <i className="fas fa-phone"> &nbsp;</i> +91-2893820381
           </span>
           <span>
-            <i className="bi bi-envelope"></i> &nbsp;tekoclassNamees@gmail.com
+            <i className="bi bi-envelope"></i>{" "}
+            &nbsp;ManjeetclassNamees@gmail.com
           </span>
           <span>
             <i className="bi bi-geo-alt"></i> &nbsp;Plot no.27, III-Floor, Near

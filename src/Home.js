@@ -10,7 +10,7 @@ const Home = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              Teko classes
+              Manjeet classes
             </a>
             <button
               className="navbar-toggler"
@@ -168,7 +168,7 @@ const Home = () => {
                 className="vid"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/e36s_nZCD94"
+                src="https://www.youtube.com/embed/S5FyS7tQuUw"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -243,7 +243,7 @@ const Home = () => {
               <i className="fas fa-phone"> &nbsp;</i> +91-2893820381
             </span>
             <span>
-              <i className="bi bi-envelope"></i> &nbsp;tekoclasses@gmail.com
+              <i className="bi bi-envelope"></i> &nbsp;Manjeetclasses@gmail.com
             </span>
             <span>
               <i className="bi bi-geo-alt"></i> &nbsp;Plot no.27, III-Floor,
