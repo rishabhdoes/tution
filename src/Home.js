@@ -9,8 +9,8 @@ const Home = () => {
       <div className="content">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              Manjeet classes
+            <a className="navbar-bran" href="#">
+              Manjeet Classes
             </a>
             <button
               className="navbar-toggler"
@@ -155,20 +155,14 @@ const Home = () => {
           </div>
         </div>
         <div className="video">
-          <span className="headp">Chemistry Lectures:</span>
-          <div className="par d-flex flex-column justify-content-around">
-            <div className="topics">
-              <button onClick={() => navigate("/videos")}>Topic 1</button>
-              <button onClick={() => navigate("/videos")}>Topic 2</button>
-              <button onClick={() => navigate("/videos")}>Topic 3</button>
-              <button onClick={() => navigate("/videos")}>Show more ...</button>
-            </div>
-            <div className="vids d-flex flex-column flex-md-row">
+          <span className="headp">Video Lectures</span>
+          <div className="par">
+            <div className="vids d-flex flex-column flex-md-row justify-content-around ">
               <iframe
                 className="vid"
-                width="560"
+                width="340"
                 height="315"
-                src="https://www.youtube.com/embed/S5FyS7tQuUw"
+                src="https://www.youtube.com/embed/Iqr3XIhSnUQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -177,9 +171,9 @@ const Home = () => {
 
               <iframe
                 className="vid"
-                width="560"
+                width="340"
                 height="315"
-                src="https://www.youtube.com/embed/e36s_nZCD94"
+                src="https://www.youtube.com/embed/Iqr3XIhSnUQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -188,9 +182,9 @@ const Home = () => {
 
               <iframe
                 className="vid"
-                width="560"
+                width="340"
                 height="315"
-                src="https://www.youtube.com/embed/e36s_nZCD94"
+                src="https://www.youtube.com/embed/Iqr3XIhSnUQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -240,15 +234,14 @@ const Home = () => {
           <span className="headp">Contact Us:</span>
           <div className="d-flex flex-column justify-content-around">
             <span>
-              <i className="fas fa-phone"> &nbsp;</i> +91-2893820381
+              <i className="fas fa-phone"> &nbsp;</i> +918709984665
             </span>
             <span>
               <i className="bi bi-envelope"></i> &nbsp;Manjeetclasses@gmail.com
             </span>
             <span>
-              <i className="bi bi-geo-alt"></i> &nbsp;Plot no.27, III-Floor,
-              Near Patidar Studio, Above Bond classNamees, M.P.Nagar, Zone-2,
-              Bhopal-11
+              <i className="bi bi-geo-alt"></i> &nbsp;MANJEET CLASSES, S. K.
+              Amashta 35/A Jhunjhun Mahal Road New Yarpur Patna 800001
             </span>
           </div>
           <hr />
@@ -269,7 +262,7 @@ const Home = () => {
               <i className="bi bi-twitter"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/manjeetclasses2025/"
               target="_blank"
               aria-label="Instagram"
             >
@@ -291,6 +284,7 @@ const Home = () => {
             </a>
           </div>
         </div>
+
         <hr />
       </div>
     </div>
