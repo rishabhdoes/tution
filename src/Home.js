@@ -248,14 +248,14 @@ const Home = () => {
           <span className="headp">Connect With Us:</span>
           <div className="social-icons">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/share/1EbecSDDha/"
               target="_blank"
               aria-label="Facebook"
             >
               <i className="bi bi-facebook"></i>
             </a>
             <a
-              href="https://www.twitter.com"
+              href="https://x.com/ManjeetClasses?t=ksr9KY_rIpQdXpZ9gVts6A&s=08"
               target="_blank"
               aria-label="Twitter"
             >

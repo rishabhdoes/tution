@@ -1201,7 +1201,7 @@ const Notes = () => {
           <div className="topicwise-contentnotes d-flex justify-content-around flex-wrap">
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-1"
+                href="https://drive.google.com/file/d/1CJMrmOxfnfjyXKjd_AmQ8yP2YaHmgG19/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1212,7 +1212,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-2"
+                href="https://drive.google.com/file/d/1Tr29ByLAyiZ6Dmfl4OPQxPnM3vbXNhSj/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1223,29 +1223,18 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-3"
+                href="https://drive.google.com/file/d/1o3liz6oLJf33_FF6jQmhGN0mdnhsQHUq/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
-                <span>Matrices</span> <br />
+                <span>Matrices and Determinants</span> <br />
                 click to open PDF
               </a>
             </div>
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-4"
-                className="pdf-tile"
-                target="_blank"
-              >
-                <span>Determinants</span> <br />
-                click to open PDF
-              </a>
-            </div>
-
-            <div>
-              <a
-                href="https://docs.google.com/document/d/your-doc-id-5"
+                href="https://drive.google.com/file/d/1FWibLqnqhJfNBJdh26brpzvACMNA3Nml/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1256,7 +1245,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-6"
+                href="https://drive.google.com/file/d/1oOOIwcmoUjOrXdmzzRQKhAQV7oOg4OFU/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1267,18 +1256,29 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-7"
+                href="https://drive.google.com/file/d/1sjgScAj4bkucM2huD-aRwYGrOJHECBP-/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
-                <span>Integrals</span> <br />
+                <span> Definite Integrals</span> <br />
                 click to open PDF
               </a>
             </div>
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-8"
+                href="https://drive.google.com/file/d/1sjgScAj4bkucM2huD-aRwYGrOJHECBP-/view?usp=sharing"
+                className="pdf-tile"
+                target="_blank"
+              >
+                <span> Indefinite Integrals</span> <br />
+                click to open PDF
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="https://drive.google.com/file/d/1a_a1yc5IVlfOw_5CmvSy-hDau7W3Ndo2/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1289,7 +1289,17 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-9"
+                href="https://drive.google.com/file/d/1a_a1yc5IVlfOw_5CmvSy-hDau7W3Ndo2/view?usp=sharing"
+                className="pdf-tile"
+                target="_blank"
+              >
+                <span>Properties and Solutions of triangle</span> <br />
+                click to open PDF
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://drive.google.com/file/d/1a7b16j2kMmM6Wzo65VncKaClbATOjVZT/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1300,7 +1310,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-10"
+                href="https://drive.google.com/file/d/1QkakMZcXRdkprTvNmEuSplNF6dc1-t1Y/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1311,7 +1321,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-11"
+                href="https://drive.google.com/file/d/1TLz9fnPCY6X1OdP7IZJjpBhe-AAP0Ry_/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1333,7 +1343,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-13"
+                href="https://drive.google.com/file/d/1KWE5HFpuwWmA6tZIKtQMFA1PpPWMkN4L/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -2210,14 +2220,14 @@ const Notes = () => {
         <span className="headp">Connect With Us:</span>
         <div className="social-icons">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/1EbecSDDha/"
             target="_blank"
             aria-label="Facebook"
           >
             <i className="bi bi-facebook"></i>
           </a>
           <a
-            href="https://www.twitter.com"
+            href="https://x.com/ManjeetClasses?t=ksr9KY_rIpQdXpZ9gVts6A&s=08"
             target="_blank"
             aria-label="Twitter"
           >
