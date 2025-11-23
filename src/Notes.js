@@ -1,30 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Notes = () => {
   const [selectedSubject, setSelectedSubject] = useState("");
   const [selectedClass, setSelectedClass] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
 
   const subjects = ["Math", "Physics", "Chemistry", "Biology"];
-  const classes = selectedSubject
-    ? ["Class9", "Class10", "Class11", "Class12"]
-    : [];
+  const classes =
+    selectedLanguage === "Hindi"
+      ? ["Class9", "Class10"]
+      : ["Class9", "Class10", "Class11", "Class12"];
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="content">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
-          <a
-            className="navbar-bran"
-            onClick={(e) => {
-              e.preventDefault(); // Prevent the default browser behavior
-              navigate("/");
-            }}
-            style={{ cursor: "pointer" }}
-          >
-            Manjeet classes
-          </a>
+          <img src="/Banner.png" className="brand-logo" />
+
           <span className="navbar-brand">Notes</span>
 
           <button
@@ -53,6 +49,40 @@ const Notes = () => {
                   Home
                 </a>
               </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  onClick={(e) => {
+                    e.preventDefault(); // Prevent the default browser behavior
+                    navigate("/");
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/gallery")}
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/about")}
+                >
+                  About us
+                </a>
+              </li>
 
               <li className="nav-item">
                 <a
@@ -74,31 +104,32 @@ const Notes = () => {
         </div>
       </nav>
 
-      <div className="filters d-flex flex-column flex-sm-row align-items-center justify-content-center">
+      <div className="filters d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mt-4">
+        {/* Language first */}
         <label>
-          Subject:
+          Language:
           <select
-            value={selectedSubject}
+            value={selectedLanguage}
             onChange={(e) => {
-              setSelectedSubject(e.target.value);
-              setSelectedClass(""); // Reset class when subject changes
+              setSelectedLanguage(e.target.value);
+              setSelectedClass(""); // reset class when language changes
+              setSelectedSubject(""); // reset subject when language changes
             }}
           >
-            <option value="">Select Subject</option>
-            {subjects.map((subject) => (
-              <option key={subject} value={subject}>
-                {subject}
-              </option>
-            ))}
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
           </select>
         </label>
 
+        {/* Class second */}
         <label>
           Class:
           <select
             value={selectedClass}
-            onChange={(e) => setSelectedClass(e.target.value)}
-            disabled={!selectedSubject} // Disable if no subject selected
+            onChange={(e) => {
+              setSelectedClass(e.target.value);
+              setSelectedSubject(""); // reset subject when class changes
+            }}
           >
             <option value="">Select Class</option>
             {classes.map((cls) => (
@@ -108,7 +139,25 @@ const Notes = () => {
             ))}
           </select>
         </label>
+
+        {/* Subject third */}
+        <label>
+          Subject:
+          <select
+            value={selectedSubject}
+            onChange={(e) => setSelectedSubject(e.target.value)}
+            disabled={!selectedClass}
+          >
+            <option value="">Select Subject</option>
+            {subjects.map((subject) => (
+              <option key={subject} value={subject}>
+                {subject}
+              </option>
+            ))}
+          </select>
+        </label>
       </div>
+
       <div className="content-section">
         {selectedSubject === "Chemistry" && selectedClass === "Class10" && (
           <div className="topicwise-contentnotes  d-flex  justify-content-around flex-wrap">
@@ -877,7 +926,7 @@ const Notes = () => {
 
             <div>
               <a
-                href="https://docs.google.com/document/d/your-doc-id-7"
+                href="https://drive.google.com/file/d/14FpvE-SZIkP2A4IBiVLJCbAhL5_3PrRb/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1419,10 +1468,10 @@ const Notes = () => {
                 <span>Light</span> <br />
                 click to open PDF
               </a>
-            </div>
+            </div>{" "}
             <div>
               <a
-                href="https://docs.google.com/document/d/unique-link-22/edit"
+                href="https://drive.google.com/file/d/1WLzDX_U26BFXiRtL2nE0X3-_UDrO-zJC/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -1432,17 +1481,27 @@ const Notes = () => {
             </div>
             <div>
               <a
-                href="https://docs.google.com/document/d/unique-link-23/edit"
+                href="https://drive.google.com/file/d/1TNPRujSuam7EJE7dDHaaUdi5z9kfCCFN/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
-                <span>Magnetism and EMI</span> <br />
+                <span>Magnetic effect of electric current</span> <br />
                 click to open PDF
               </a>
             </div>
             <div>
               <a
-                href="https://docs.google.com/document/d/unique-link-24/edit"
+                href="https://drive.google.com/file/d/1TNPRujSuam7EJE7dDHaaUdi5z9kfCCFN/view?usp=sharing"
+                className="pdf-tile"
+                target="_blank"
+              >
+                <span>Human Eye and colourful world</span> <br />
+                click to open PDF
+              </a>
+            </div>
+            <div>
+              <a
+                href="hthttps://drive.google.com/file/d/1sYd3NRLtZ1zcPXul65t5xObTRMylTLaR/view?usp=sharing"
                 className="pdf-tile"
                 target="_blank"
               >
@@ -2231,7 +2290,7 @@ const Notes = () => {
             target="_blank"
             aria-label="Twitter"
           >
-            <i className="bi bi-twitter"></i>
+            <i className="bi bi-x"></i>
           </a>
           <a
             href="https://www.instagram.com/manjeetclasses2025/"
@@ -2248,11 +2307,25 @@ const Notes = () => {
             <i className="bi bi-linkedin"></i>
           </a>
           <a
-            href="https://www.youtube.com"
+            href="hhttps://www.youtube.com/@MANJEETCLASSES2025"
             target="_blank"
             aria-label="YouTube"
           >
             <i className="bi bi-youtube"></i>
+          </a>
+          <a
+            href="https://t.me/manjeetclasses2025"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i className="bi bi-telegram"></i>
+          </a>
+          <a
+            href="https://whatsapp.com/channel/0029VbB5fE3AO7RHp9uxEn3j"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i className="bi bi-whatsapp"></i>
           </a>
         </div>
       </div>

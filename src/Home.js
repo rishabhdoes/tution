@@ -1,5 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -7,11 +13,10 @@ const Home = () => {
     <div>
       {" "}
       <div className="content">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <div className="container-fluid">
-            <a className="navbar-bran" href="#">
-              Manjeet Classes
-            </a>
+            <img src="/Banner.png" className="brand-logo" />
+
             <button
               className="navbar-toggler"
               type="button"
@@ -35,6 +40,22 @@ const Home = () => {
                     Home
                   </a>
                 </li>
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/gallery")}
+                >
+                  Gallery
+                </a>
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/about")}
+                >
+                  About Us
+                </a>
                 <li className="nav-item">
                   <a
                     className="nav-link"
@@ -70,25 +91,65 @@ const Home = () => {
           </div>
         </nav>
 
-        <div className="desc d-flex">
-          <div className="row d-flex flex-sm-column flex-md-row">
-            <div className="col-sm-12 col-md-8  d-flex flex-column justify-content-around align-items-center">
-              <span id="heading">
-                Crack <span>JEE Exams</span> with Expert <br /> Guidance and
-                Study Resources!
-              </span>
-              <span id="afterpiece">
-                Master every concept with in-depth video lessons,
-                <br /> comprehensive study materials to help you ace <br />
-                the JEE Exam.
-              </span>
-              <span className="button">Start Learning Today</span>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 5000 }}
+          loop={true}
+        >
+          <SwiperSlide className="mySwiper">
+            <div className="desc d-flex">
+              <div className="row d-flex flex-sm-column flex-md-row">
+                <div className="col-sm-12 col-md-8 d-flex flex-column justify-content-around align-items-center">
+                  <span id="heading">
+                    Crack <span>JEE Exams</span> with Expert <br /> Guidance and
+                    Study Resources!
+                  </span>
+                  <span id="afterpiece">
+                    Master every concept with in-depth video lessons,
+                    <br /> comprehensive study materials to help you ace <br />
+                    the JEE Exam.
+                  </span>
+                  <span className="button">Start Learning Today</span>
+                </div>
+                <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                  <img
+                    src="image.jpeg"
+                    alt="student photo"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-sm-12 col-md-4  d-flex justify-content-center align-items-center">
-              <img src="image.jpeg" alt="student photo" className="img-fluid" />
+          </SwiperSlide>
+          <SwiperSlide className="mySwiper">
+            <div className="desc d-flex">
+              <div className="row d-flex flex-sm-column flex-md-row">
+                <div className="col-sm-12 col-md-8 d-flex flex-column justify-content-around align-items-center">
+                  <span id="heading">
+                    Crack <span>JEE Exams</span> with Expert <br /> Guidance and
+                    Study Resources!
+                  </span>
+                  <span id="afterpiece">
+                    Master every concept with in-depth video lessons,
+                    <br /> comprehensive study materials to help you ace <br />
+                    the JEE Exam.
+                  </span>
+                  <span className="button">Start Learning Today part2</span>
+                </div>
+                <div className="col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                  <img
+                    src="image.jpeg"
+                    alt="student photo"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </SwiperSlide>
+
+          {/* Add more <SwiperSlide> blocks for additional slides */}
+        </Swiper>
 
         <div
           id="resources"
@@ -259,7 +320,7 @@ const Home = () => {
               target="_blank"
               aria-label="Twitter"
             >
-              <i className="bi bi-twitter"></i>
+              <i className="bi bi-x"></i>
             </a>
             <a
               href="https://www.instagram.com/manjeetclasses2025/"
@@ -276,12 +337,29 @@ const Home = () => {
               <i className="bi bi-linkedin"></i>
             </a>
             <a
-              href="https://www.youtube.com"
+              href="hhttps://www.youtube.com/@MANJEETCLASSES2025"
               target="_blank"
               aria-label="YouTube"
             >
               <i className="bi bi-youtube"></i>
             </a>
+            <a
+              href="https://t.me/manjeetclasses2025"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i className="bi bi-telegram"></i>
+            </a>
+            <a
+              href="https://whatsapp.com/channel/0029VbB5fE3AO7RHp9uxEn3j"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i className="bi bi-whatsapp"></i>
+            </a>
+          </div>
+          <div className="rishabh">
+            <span>Made by Rishabh</span>
           </div>
         </div>
 

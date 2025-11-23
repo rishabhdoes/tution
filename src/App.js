@@ -4,6 +4,8 @@ import Video from "./Videos";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Tests from "./Tests";
 import Solutions from "./Solutions";
+import Gallery from "./Gallery";
+import About from "./About";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/videos" element={<Video />} />
           <Route path="/test" element={<Tests />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>

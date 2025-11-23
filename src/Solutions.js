@@ -13,17 +13,10 @@ const Solutions = () => {
 
   return (
     <div className="content">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
-          <a
-            className="navbar-bran"
-            onClick={(e) => {
-              e.preventDefault(); // Prevent the default browser behavior
-              navigate("/");
-            }}
-          >
-            Manjeet classes
-          </a>
+          <img src="/Banner.png" className="brand-logo" />
+
           <span className="navbar-brand">Solutions</span>
 
           <button
@@ -50,6 +43,27 @@ const Solutions = () => {
                   style={{ cursor: "pointer" }}
                 >
                   Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/gallery")}
+                >
+                  Gallery
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  aria-current="page"
+                  href="#"
+                  onClick={() => navigate("/about")}
+                >
+                  About us
                 </a>
               </li>
 
@@ -667,7 +681,7 @@ const Solutions = () => {
             target="_blank"
             aria-label="Twitter"
           >
-            <i className="bi bi-twitter"></i>
+            <i className="bi bi-x"></i>
           </a>
           <a
             href="https://www.instagram.com/manjeetclasses2025/"
@@ -684,11 +698,25 @@ const Solutions = () => {
             <i className="bi bi-linkedin"></i>
           </a>
           <a
-            href="https://www.youtube.com"
+            href="hhttps://www.youtube.com/@MANJEETCLASSES2025"
             target="_blank"
             aria-label="YouTube"
           >
             <i className="bi bi-youtube"></i>
+          </a>
+          <a
+            href="https://t.me/manjeetclasses2025"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i className="bi bi-telegram"></i>
+          </a>
+          <a
+            href="https://whatsapp.com/channel/0029VbB5fE3AO7RHp9uxEn3j"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i className="bi bi-whatsapp"></i>
           </a>
         </div>
       </div>

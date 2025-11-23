@@ -10,6 +10,7 @@ body {
 }
 
 .navbar {
+  //padding-bottom: 10vh;
     min-height: 10vh;
     border-bottom: 3px solid black;
 
@@ -25,13 +26,42 @@ margin-left: 13vw;
 font-weight: bolder;
 }
 
+.mySwiper
+{
+  padding-top: 10vh;
+  
+}
+
+.brand-logo {
+  width: 24vw;
+  height: 9vh;
+  margin-left: 12vw;
+
+}
+
+/* Make logo bigger on small screens (phones) */
+@media (max-width: 576px) {
+  .brand-logo {
+    width: 70vw;
+    height: 8vh;
+    margin-left: 12vw;
+    padding-top: 1vh;;
+  }
+  .mySwiper
+{
+  padding-top: 15vh;
+  
+}
+
+}
+
 .navbar-brand {
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #4335A7;
     font-size: 5vh;
-    margin-left: 13vw;
-    text-decoration:underline;
+    text-decoration:none;
+    padding-left: 7vw;
 
 }
 
@@ -263,7 +293,8 @@ font-weight: bolder;
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 20px 0;
+    //margin: 20px 0;
+    padding-top: 18vh;
   }
   
   .filters label {
@@ -393,8 +424,21 @@ font-weight: bolder;
     .topicwisenotes {
       width: 90vw; /* Adjusts container width for small screens */
     }
+    .par{
+      padding-left: 15vw;
+    }
+    .filters{
+      padding-top: 26vh;
+    }
+    .navbar-brand {
+      padding-left: 20vw;
+    }
   }
   
+  .rishabh{
+    text-align: center;
+    margin-left:50vw;
+  }
 
   .WARNING {
     color: rgb(211, 64, 64); /* Bright red to highlight the warning */
